@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="keski"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 01:36:18 &#214;S"/>
+        <attribute name="created" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDY7MTE6MzU6MzQgw5bDljszMTI4"/>
+        <attribute name="edited" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDY7MDE6MzY6MTggw5ZTOzE7MzEwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ay" type="Integer" array="False" size=""/>
+            <declare name="mevsim" type="String" array="False" size=""/>
+            <output expression="&quot;Ay numaras&#305;n&#305; giriniz (1-12)&quot;" newline="True"/>
+            <input variable="ay"/>
+            <if expression="(ay = 12) || (ay = 1) || (ay = 2)">
+                <then>
+                    <output expression="&quot;Mevsim K&#305;&#351;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(ay &gt;= 3) &amp;&amp; (ay &lt;=5)">
+                        <then>
+                            <output expression="&quot;Mevsim &#304;lkbahar&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(ay &gt;=6 ) &amp;&amp; (ay &lt; 9)">
+                                <then>
+                                    <output expression="&quot;Mevsim Yaz&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Mevsim sonbahar&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
