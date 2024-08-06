@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="keski"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 01:35:28 &#214;S"/>
+        <attribute name="created" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDY7MDE6MDM6MjAgw5ZTOzI5ODY="/>
+        <attribute name="edited" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDY7MDE6MzU6Mjggw5ZTOzE7MzEwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayac, bolum" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="3"/>
+            <while expression="sayi &lt; 100">
+                <assign variable="bolum" expression="0"/>
+                <assign variable="sayac" expression="1"/>
+                <while expression="sayac&lt;=sayi">
+                    <if expression="sayi%sayac=0">
+                        <then>
+                            <assign variable="bolum" expression="bolum+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="sayac" expression="sayac+1"/>
+                </while>
+                <if expression="bolum=2">
+                    <then>
+                        <output expression="&quot;Asald&#305;r&quot;&amp;sayi" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="sayi" expression="sayi+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

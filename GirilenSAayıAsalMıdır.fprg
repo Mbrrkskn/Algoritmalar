@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="keski"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 01:01:41 &#214;S"/>
+        <attribute name="created" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDY7MTI6MDA6NDMgw5ZTOzI5OTA="/>
+        <attribute name="edited" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDY7MDE6MDE6NDEgw5ZTOzE7MzA5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac, bolum, sayi" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="1"/>
+            <assign variable="bolum" expression="0"/>
+            <output expression="&quot;Bir say&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <while expression="sayac &lt;= sayi">
+                <if expression="sayi%sayac=0">
+                    <then>
+                        <assign variable="bolum" expression="bolum + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="sayac" expression="sayac +1"/>
+            </while>
+            <if expression="bolum=2">
+                <then>
+                    <output expression="&quot;Asald&#305;r&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Asal de&#287;ildir&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

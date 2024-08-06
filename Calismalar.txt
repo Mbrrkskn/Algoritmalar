@@ -10,3 +10,6 @@ calısma 4-İki vize bir finalde yapılan
 sınavda vizenin %30'u finalin %70'i
  alınacak eğer ortalama
 50 ve üzerindeyse geçti altındaysa kaldı yazdırılacak
+calısma 5- Ekrandan kacıncı ayda oldugunu okutun ve bulunduğunuz mevsimi yazdırın.
+calısma 6-ekrandan girilen sayının asal olup olmadığını kontrol eden program
+calısma 7- ekrana 1 -100 arasındaki asal sayıları basınız
