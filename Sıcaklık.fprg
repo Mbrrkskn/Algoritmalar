@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="keski"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 11:09:51 &#214;&#214;"/>
+        <attribute name="created" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDY7MTA6NTQ6Mjcgw5bDljszMTMw"/>
+        <attribute name="edited" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDY7MTE6MDk6NTEgw5bDljsxOzMyMzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s&#305;cakl&#305;k" type="Integer" array="False" size=""/>
+            <output expression="&quot;ss&#305;cakl&#305;k giriniz&quot;" newline="True"/>
+            <input variable="s&#305;cakl&#305;k"/>
+            <if expression="s&#305;cakl&#305;k &lt; 0">
+                <then>
+                    <output expression="&quot;Su kat&#305;d&#305;r&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="s&#305;cakl&#305;k &gt;= 0 AND s&#305;cakl&#305;k &lt;= 100">
+                        <then>
+                            <output expression="&quot;Su gazd&#305;r&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Su s&#305;v&#305;d&#305;r&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
