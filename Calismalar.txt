@@ -1,0 +1,7 @@
+Calisma 1-Ekrandan girilen sayının karesini ve küpünü alınız.
+ekrana sonucunu yazdırınız.
+
+Calısma 2- Ekrandan kenarları alınan dıkdortgenin cevre ve alan hesabını yapınız
+
+Calısma 3- Ekrandan alınan suyun sıcaklıgına gore 0'dan kucukse katı, 0 ile 100 arasında ise sıvı 
+100den büyükse gaz 

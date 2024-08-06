@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="keski"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 11:04:22 &#214;&#214;"/>
+        <attribute name="created" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDY7MTA6NDM6NTMgw5bDljszMTI3"/>
+        <attribute name="edited" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDY7MTE6MDQ6MjIgw5bDljsxOzMyMjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="uzunluk, gen&#305;sl&#305;k, cevre, alan" type="Integer" array="False" size=""/>
+            <output expression="&quot;Dikd&#246;rtgenin bir uzunlu&#287;unu giriniz&quot;" newline="True"/>
+            <input variable="uzunluk"/>
+            <output expression="&quot;Dikd&#246;rtgenin bir geni&#351;li&#287;ini giriniz&quot;" newline="True"/>
+            <input variable="gen&#305;sl&#305;k"/>
+            <assign variable="cevre" expression="uzunluk+uzunluk+gen&#305;sl&#305;k+gen&#305;sl&#305;k"/>
+            <assign variable="alan" expression="uzunluk*gen&#305;sl&#305;k"/>
+            <output expression="&quot;&#199;evre:&quot;&amp;cevre" newline="True"/>
+            <output expression="&quot;Alan:&quot;&amp;alan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

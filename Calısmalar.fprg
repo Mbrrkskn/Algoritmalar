@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="keski"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 10:28:20 &#214;&#214;"/>
+        <attribute name="created" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDY7MTA6MDk6MTYgw5bDljszMTI4"/>
+        <attribute name="edited" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDY7MTA6Mjg6MjAgw5bDljsyOzMyMzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, karesi, k&#252;p&#252;" type="Integer" array="False" size=""/>
+            <output expression="&quot;Say&#305;y&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <assign variable="karesi" expression="sayi1*sayi1"/>
+            <assign variable="k&#252;p&#252;" expression="sayi1*sayi1*sayi1"/>
+        </body>
+    </function>
+</flowgorithm>
