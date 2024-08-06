@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="keski"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 10:03:54 &#214;S"/>
+        <attribute name="created" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDY7MDE6MTQ6NDcgw5ZTOzI5OTc="/>
+        <attribute name="edited" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDY7MTA6MDM6NTQgw5ZTOzE7MzEwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, toplam" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="i" start="0" end="100" direction="inc" step="5">
+                <output expression="i" newline="True"/>
+                <assign variable="toplam" expression="toplam+i"/>
+            </for>
+            <output expression="&quot;0'dan 100'e kadar olan ve 5'e b&#246;l&#252;nen say&#305;lar&#305;n toplam&#305;:&quot;&amp;toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
