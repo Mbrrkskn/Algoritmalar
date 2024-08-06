@@ -4,4 +4,9 @@ ekrana sonucunu yazdırınız.
 Calısma 2- Ekrandan kenarları alınan dıkdortgenin cevre ve alan hesabını yapınız
 
 Calısma 3- Ekrandan alınan suyun sıcaklıgına gore 0'dan kucukse katı, 0 ile 100 arasında ise sıvı 
-100den büyükse gaz 
+100den büyükse gaz halindedir mesajı verecek.
+
+calısma 4-İki vize bir finalde yapılan 
+sınavda vizenin %30'u finalin %70'i
+ alınacak eğer ortalama
+50 ve üzerindeyse geçti altındaysa kaldı yazdırılacak
