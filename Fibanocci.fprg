@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="keski"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-07 12:59:59 &#214;S"/>
+        <attribute name="created" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDc7MTE6NTU6NDYgw5bDljszMTM0"/>
+        <attribute name="edited" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDc7MTI6NTk6NTkgw5ZTOzI7MzEyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fibonacci" type="Integer" array="True" size="20"/>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <declare name="oran" type="Real" array="False" size=""/>
+            <assign variable="fibonacci[0]" expression="1"/>
+            <assign variable="fibonacci[1]" expression="1"/>
+            <for variable="sayi" start="2" end="19" direction="inc" step="1">
+                <assign variable="fibonacci[sayi]" expression="fibonacci[sayi-1] + fibonacci[sayi-2]"/>
+            </for>
+            <for variable="sayi" start="1" end="19" direction="inc" step="1">
+                <output expression="fibonacci[sayi]" newline="True"/>
+                <output expression="fibonacci[sayi]/fibonacci[sayi-1]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="keski"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-07 12:43:24 &#214;S"/>
+        <attribute name="created" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDc7MTE6MDA6NDcgw5bDljszMTI1"/>
+        <attribute name="edited" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDc7MTI6NDM6MjQgw5ZTOzE7MzEwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, tekadet, ciftadet, tektoplam, cifttoplam, elemansay&#305;s&#305;" type="Integer" array="False" size=""/>
+            <assign variable="elemansay&#305;s&#305;" expression="50"/>
+            <declare name="sayilar" type="Integer" array="True" size="elemansay&#305;s&#305;"/>
+            <assign variable="tekadet" expression="0"/>
+            <assign variable="ciftadet" expression="0"/>
+            <assign variable="tektoplam" expression="0"/>
+            <assign variable="cifttoplam" expression="0"/>
+            <for variable="i" start="0" end="elemansay&#305;s&#305;-1" direction="inc" step="1">
+                <assign variable="sayilar[i]" expression="Random(100)+1"/>
+            </for>
+            <for variable="i" start="0" end="elemansay&#305;s&#305;-1" direction="inc" step="1">
+                <if expression="sayilar[i]%2=0">
+                    <then>
+                        <assign variable="ciftadet" expression="ciftadet+1"/>
+                        <assign variable="cifttoplam" expression="cifttoplam+i"/>
+                    </then>
+                    <else>
+                        <assign variable="tekadet" expression="tekadet+1"/>
+                        <assign variable="tektoplam" expression="tektoplam+i"/>
+                    </else>
+                </if>
+                <output expression="&quot;Tek say&#305; adedi:&quot;&amp;tekadet" newline="True"/>
+                <output expression="&quot;Tek say&#305;lar&#305;n toplam&#305;:&quot;&amp;tektoplam" newline="True"/>
+                <output expression="&quot;&#199;ift say&#305; adedi :&quot;&amp;ciftadet" newline="True"/>
+                <output expression="&quot;&#199;ift say&#305;lar&#305;n toplam&#305;:&quot;&amp;cifttoplam" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

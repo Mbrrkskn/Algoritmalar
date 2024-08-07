@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="keski"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-07 12:42:59 &#214;S"/>
+        <attribute name="created" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDc7MTE6NDc6MjMgw5bDljszMTMw"/>
+        <attribute name="edited" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDc7MTI6NDI6NTkgw5ZTOzE7MzExMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="True" size="10"/>
+            <declare name="i, enbuyuk, enkucuk" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <assign variable="sayi[i]" expression="Random(100)+1"/>
+                <assign variable="enbuyuk" expression="sayi[0]"/>
+                <assign variable="enkucuk" expression="sayi[0]"/>
+                <if expression="sayi[i]&gt;enbuyuk">
+                    <then>
+                        <assign variable="enbuyuk" expression="sayi[i]"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="sayi[i]&lt;enkucuk">
+                    <then>
+                        <assign variable="enkucuk" expression="sayi[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;En b&#252;y&#252;k eleman:&quot;&amp;enbuyuk" newline="True"/>
+            <output expression="&quot;En k&#252;&#231;&#252;k eleman:&quot;&amp;enkucuk" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

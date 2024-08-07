@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="keski"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-07 01:46:13 &#214;S"/>
+        <attribute name="created" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDc7MTI6NDM6NDggw5ZTOzMwMDM="/>
+        <attribute name="edited" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDc7MDE6NDY6MTMgw5ZTOzE7MzEwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tribonacci" type="Integer" array="True" size="20"/>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <assign variable="tribonacci[0]" expression="1"/>
+            <assign variable="tribonacci[1]" expression="1"/>
+            <assign variable="tribonacci[2]" expression="2"/>
+            <for variable="sayi" start="3" end="19" direction="inc" step="1">
+                <assign variable="tribonacci[sayi]" expression="tribonacci[sayi-1]+tribonacci[sayi-2]+tribonacci[sayi-3]"/>
+            </for>
+            <for variable="sayi" start="0" end="19" direction="inc" step="1">
+                <output expression="tribonacci[sayi]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
