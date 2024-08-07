@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="keski"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-07 09:22:59 &#214;&#214;"/>
+        <attribute name="created" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDc7MDg6Mzg6MDYgw5bDljszMTM3"/>
+        <attribute name="edited" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDc7MDk6MjI6NTkgw5bDljsxOzMyNDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kullan&#305;c&#305;kodu, dogrukullan&#305;c&#305;, sifre, dogrusifre" type="String" array="False" size=""/>
+            <declare name="yanl&#305;ssay&#305;s&#305;" type="Integer" array="False" size=""/>
+            <assign variable="yanl&#305;ssay&#305;s&#305;" expression="0"/>
+            <do expression="yanl&#305;ssay&#305;s&#305;&lt;5">
+                <output expression="&quot;kullan&#305;c&#305; kodu&quot;" newline="True"/>
+                <input variable="kullan&#305;c&#305;kodu"/>
+                <output expression="&quot;sifre&quot;" newline="True"/>
+                <input variable="sifre"/>
+                <if expression="kullan&#305;c&#305;kodu =&quot;admin&quot;&amp;&amp;sifre=&quot;admin&quot;">
+                    <then>
+                        <output expression="&quot;Hosgeldin admin&quot;" newline="True"/>
+                        <assign variable="yanl&#305;ssay&#305;s&#305;" expression="10"/>
+                    </then>
+                    <else>
+                        <if expression="kullan&#305;c&#305;kodu=&quot;admin&quot;&amp;&amp;sifre&lt;&gt;&quot;admin&quot;">
+                            <then>
+                                <output expression="&quot;Kullan&#305;c&#305; kodu do&#287;ru , &#351;ifre hatal&#305;d&#305;r&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="sifre=&quot;admin&quot;&amp;&amp;kullan&#305;c&#305;kodu!=&quot;admin&quot;">
+                                    <then>
+                                        <output expression="&quot;&#350;ifre do&#287;ru kullan&#305;c&#305;kodu yanl&#305;&#351;&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Kullan&#305;c&#305; kodu ve &#351;ifre hatal&#305;&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                                <output expression="&quot;Kullan&#305;c&#305; kodu hatal&#305;d&#305;r&quot;" newline="True"/>
+                            </else>
+                        </if>
+                        <assign variable="yanl&#305;ssay&#305;s&#305;" expression="yanl&#305;ssay&#305;s&#305;+1"/>
+                        <output expression="&quot;Kalan Hakk&#305;n&#305;z:&quot; &amp;(5-yanl&#305;ssay&#305;s&#305;)" newline="True"/>
+                    </else>
+                </if>
+            </do>
+            <if expression="yanl&#305;ssay&#305;s&#305;&#13;&#10;=5">
+                <then>
+                    <output expression="&quot;Giri&#351; hakk&#305;n&#305;z ask&#305;ya al&#305;nd&#305; . 10 dkka sonra tekrar deneyiniz&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="yanl&#305;ssay&#305;s&#305;=10">
+                        <then>
+                            <output expression="&quot;Tebrikler ba&#351;ar&#305;l&#305; giri&#351; yapt&#305;n&#305;z&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <comment text="Ekrandan kullan&#305;c&#305; kodu ve sifre isteyin"/>
+            <comment text="Admin ,admin girildiyse hosgeldin mesaj&#305; verin.Yanl&#305;s girilen bilgiye de ekrana bas&#305;n&#305;z.Toplam yanl&#305;s girme hakk&#305; 5 olsun"/>
+        </body>
+    </function>
+</flowgorithm>

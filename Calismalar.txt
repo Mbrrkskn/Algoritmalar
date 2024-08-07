@@ -13,3 +13,4 @@ sınavda vizenin %30'u finalin %70'i
 calısma 5- Ekrandan kacıncı ayda oldugunu okutun ve bulunduğunuz mevsimi yazdırın.
 calısma 6-ekrandan girilen sayının asal olup olmadığını kontrol eden program
 calısma 7- ekrana 1 -100 arasındaki asal sayıları basınız
+calısma 8-kasiyerin okuttuğu ürün adedini bulunuz. Toplam fiyatlarını bulunuz.

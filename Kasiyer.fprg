@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="keski"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-07 10:32:22 &#214;&#214;"/>
+        <attribute name="created" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDc7MDg6NTM6NTQgw5bDljszMTM3"/>
+        <attribute name="edited" value="a2Vza2k7TEFQVE9QLTZUNEpGNkpEOzIwMjQtMDgtMDc7MTA6MzI6MjIgw5bDljsxOzMyMzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="toplamadet, urunadet, urunsay&#305;s&#305;" type="Integer" array="False" size=""/>
+            <declare name="toplamfiyat, urunfiyat" type="Real" array="False" size=""/>
+            <assign variable="toplamadet" expression="0"/>
+            <assign variable="toplamfiyat" expression="0.0"/>
+            <assign variable="urunsay&#305;s&#305;" expression="4"/>
+            <do expression="urunsay&#305;s&#305;&lt;&gt;0">
+                <output expression="&quot;&#220;r&#252;n adedini giriniz&quot;" newline="True"/>
+                <input variable="urunadet"/>
+                <output expression="&quot;&#220;r&#252;n fiyat&#305;n&#305; giriniz&quot;" newline="True"/>
+                <input variable="urunfiyat"/>
+                <assign variable="toplamadet" expression="toplamadet+urunadet"/>
+                <assign variable="toplamfiyat" expression="toplamfiyat+(urunadet*urunfiyat)"/>
+                <assign variable="urunsay&#305;s&#305;" expression="urunsay&#305;s&#305;-1"/>
+            </do>
+            <output expression="&quot;Toplam &#252;r&#252;n adedi:&quot;&amp;toplamadet" newline="True"/>
+            <output expression="&quot;Toplam fiyat:&quot;&amp;toplamfiyat" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
