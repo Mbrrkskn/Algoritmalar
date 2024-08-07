@@ -14,3 +14,21 @@ calısma 5- Ekrandan kacıncı ayda oldugunu okutun ve bulunduğunuz mevsimi yaz
 calısma 6-ekrandan girilen sayının asal olup olmadığını kontrol eden program
 calısma 7- ekrana 1 -100 arasındaki asal sayıları basınız
 calısma 8-kasiyerin okuttuğu ürün adedini bulunuz. Toplam fiyatlarını bulunuz.
+calısma 9-50 elemanlı bir dizi oluşturun.
+Rastgele 1-100 arasında sayılar doldurun 
+Dizideki tek ve çift sayıların 
+adetlerini ve toplamlarını ekrana bastırın.
+
+calısma 10- rastgele 10 elemanlı sayılar dizisi
+ olusturun. En buyuk ve en kucuk elemanını 
+ bulunuz.
+
+calısma 11- 1,1,2,3,5,8,13... seklinde 
+kendisinden once gelen 2 sayının toplamından 
+olusan seriye fibanocci serisi denir.İlk 20 
+elemanı bir diziye aktarın ve listeleyin.
+
+calısma 12- Tribonacci serisi
+1,1,2,4,7,13,24.... seklinde kendisinden once gelen 
+3 sayının toplamından olusan seridir.
+ilk 20 elemanı bir diziye aktarın ve listeleyin
